@@ -151,7 +151,7 @@ font-family: 'Ubuntu Mono', monospace;
   justify-content: space-evenly;
 }
 
-.navbar li {
+li {
   list-style: none;
 }
 
@@ -175,4 +175,26 @@ font-family: 'Ubuntu Mono', monospace;
 .visible {
   opacity: 1;
   margin-left: 0;
+}
+
+.skills-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  color: var(--color4);
+}
+
+.skills-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.skill-icon {
+  max-width: 50px;
+  margin: 15px;
 }
