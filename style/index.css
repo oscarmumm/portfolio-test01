@@ -73,7 +73,11 @@ font-family: 'Ubuntu Mono', monospace;
 }
 
 .presentation {
-  font-size: max(1rem, 2vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: max(2rem, 3vw);
   font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   line-height: max(2.5rem, 3vw);
@@ -83,20 +87,10 @@ font-family: 'Ubuntu Mono', monospace;
   font-style: italic;
 }
 
-.pc-sim-screen {
-  border: 2px solid var(--color5);
-  width: 300px;
-  height: 200px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .highlight {
   color: var(--color6);
-  font-size: 1.5rem;
-  line-height: max(2rem, 3vw);
+  font-size: 2.5rem;
+  line-height: max(4rem, 4vw);
 }
 
 .tab {
