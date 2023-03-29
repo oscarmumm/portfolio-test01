@@ -34,22 +34,27 @@ font-family: 'Ubuntu Mono', monospace;
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  opacity: 0;
+  transition: 1s all ease;
+  margin-left: -30vw;
 }
 
 .subtitle {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 1.5rem;
   color: var(--color7);
 }
 
 .paragraph {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-style: italic;
   color: var(--color4);
 }
@@ -60,7 +65,7 @@ font-family: 'Ubuntu Mono', monospace;
 
 .profile-picture {
   z-index: 1;
-  max-width: 200px;
+  max-width: 150px;
   /*transform: rotate(-20deg);
   position: absolute;
   top: 20vh;
@@ -73,15 +78,25 @@ font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
   line-height: max(2.5rem, 3vw);
   color: var(--color4);
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   font-style: italic;
 }
 
+.pc-sim-screen {
+  border: 2px solid var(--color5);
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .highlight {
   color: var(--color6);
-  font-size: 2.5rem;
-  line-height: max(3rem, 3vw);
+  font-size: 1.5rem;
+  line-height: max(2rem, 3vw);
 }
 
 .tab {
@@ -154,10 +169,16 @@ font-family: 'Ubuntu Mono', monospace;
   color: var(--color7);
 }
 
-.hidden {
+.no-display {
   display: none;
 }
 
 .navbar-collapse {
   margin-top: -40vh;
+}
+
+
+.visible {
+  opacity: 1;
+  margin-left: 0;
 }

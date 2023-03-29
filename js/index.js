@@ -10,7 +10,13 @@ const navBar = d.getElementById('navbar');
 const presentationPhase1 = d.getElementById('presentationPhase1');
 const presentationPhase2 = d.getElementById('presentationPhase2');
 
-const profilePicture = d.getElementById('profile-picture');
+const startSection = d.getElementById('start-section');
+const aboutSection = d.getElementById('about-section');
+const skillsSection = d.getElementById('skills-section');
+const projectsSection = d.getElementById('projects-section');
+const contactSection = d.getElementById('contact-section');
+
+const navLink = d.querySelectorAll('.nav-link');
 
 menuIcon.addEventListener('click', () => {
   menuIconDiv1.classList.toggle('menu-click-style1');
@@ -18,6 +24,16 @@ menuIcon.addEventListener('click', () => {
   menuIconDiv3.classList.toggle('menu-click-style3');
   navBar.classList.toggle('navbar-collapse');
 });
+
+navLink.forEach((element) => {
+  element.addEventListener('click', () => {
+    menuIconDiv1.classList.toggle('menu-click-style1');
+    menuIconDiv2.classList.toggle('menu-click-style2');
+    menuIconDiv3.classList.toggle('menu-click-style3');
+    navBar.classList.toggle('navbar-collapse');
+  })
+})
+
 
 //---------- this is for typing animation ----------
 
@@ -55,7 +71,6 @@ function typing3() {
 function colorizePresentation () {
   presentationPhase1.style.display = 'block';
   presentationPhase2.style.display = 'none';
-  profilePicture.classList.remove('hidden');
 }
 window.addEventListener('load', () => {
   typing1();
@@ -64,3 +79,28 @@ window.addEventListener('load', () => {
   setTimeout(colorizePresentation, 4200);
 });
 
+
+//---------------------- OBSERVER ----------------------
+const loadSection = (entries, observer) => {
+  // console.log(entries);
+  // console.log(observer);
+  entries.forEach((entry) => {
+    if(entry.isIntersecting){
+      console.log('La seccion está en el viewport');
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+};
+
+const observer = new IntersectionObserver(loadSection, {
+  root: null,
+  rootMargin: '0px 0px 0px 0px',
+  threshold: 0.5
+});
+
+observer.observe(aboutSection);
+observer.observe(skillsSection);
+observer.observe(projectsSection);
+observer.observe(contactSection);

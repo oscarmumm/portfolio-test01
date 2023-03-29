@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/index.css">
-  <title>Document</title>
+  <title>Portfolio</title>
 </head>
 <body>
 
@@ -20,56 +20,62 @@
     <nav class="navbar navbar-collapse" id="navbar">
       <ul>
         <li>
-          <a href="#about">About me</a>
+          <a class="nav-link" href="#start-section">Inicio</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a class="nav-link" href="#about-section">Sobre mi</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a class="nav-link" href="#skills-section">Habilidades</a>
         </li>
         <li>
-          <a href="#contact">Contact me</a>
+          <a class="nav-link" href="#projects-section">Proyectos</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact-section">Contacto</a>
         </li>
       </ul>
     </nav>
 
-    <section class="section start-section">
-      <img class="profile-picture " id="profile-picture" src="./assets/img/foto-perfil-min.png" alt="foto de perfil">
-      <div class="presentation hidden" id="presentationPhase1">
-        <p class="highlight">OscarMumm</p>
-        <p class="tab highlight">'Front-end Web Developer'</p>
-      </div>
-
-      <div class="presentation" id="presentationPhase2">
-        <p class="node1" id="node1"></p>
-        <p class="node2 tab" id="node2"></p>
-        <p class="node3" id="node3"></p>
+    <section class="section start-section visible" id="start-section">
+      <div class="pc-sim-screen">
+        <div class="presentation no-display" id="presentationPhase1">
+          <p class="highlight">OscarMumm</p>
+          <p class="tab highlight">'Front-end Web</p>
+          <p class="highlight">Developer'</p>
+        </div>
+        
+        <div class="presentation" id="presentationPhase2">
+          <p class="node1" id="node1"></p>
+          <p class="node2 tab" id="node2"></p>
+          <p class="node3" id="node3"></p>
+        </div>
       </div>
     </section>
-
     
-    <section class="section about" id="about">
+    
+    <section class="section about" id="about-section">
+      <img class="profile-picture " id="profile-picture" src="./assets/img/foto-perfil-min.png" alt="foto de perfil">
       <h2 class="subtitle">Sobre mi</h2>
       <p class="paragraph">
-        'Soy estudiante de Desarrollo Web Front-end. Trabajo hace 14 años en el rubro gastronómico. Deseo comenzar una carrera profesional en el sector de IT y seguir capacitándome con las tecnologías que se utilizan para el desarrollo. Mi prioridad a la hora del diseño  es crear sitios webs con enfoque mobile-first y full-responsive, además de buscar la mejor performance posible.'
+        'Soy estudiante de Desarrollo Web Front-end. Trabajo hace 14 años en el rubro gastronómico. Deseo comenzar una carrera profesional en el sector de IT y seguir capacitándome con las tecnologías que se utilizan para el desarrollo. Mi prioridad a la hora del diseño  es crear sitios web con enfoque mobile-first y full-responsive, además de buscar la mejor performance.'
       </p>
     </section>
     
     
-    <section class="section skills" id="skills">
-      <h2 class="subtitle">Habilidades</h2>
+    <section class="section skills" id="skills-section">
+      <h2 class="subtitle">Habilidades<h2>
       
     </section>
     
     
-    <section class="section projects" id="projects">
+    <section class="section projects" id="projects-section">
       <h2 class="subtitle">Proyectos</h2>
       
     </section>
     
     
-    <section class="section contact" id="contact">
+    <section class="section contact" id="contact-section">
       <h2 class="subtitle">Contacto</h2>
 
     </section>
