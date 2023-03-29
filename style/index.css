@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Maven+Pro:wght@400;700;900&family=Righteous&family=Ubuntu+Mono:wght@400;700&display=swap');
+/* GOOGLE FONTS 
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Ubuntu Mono', monospace;
+*/
+
+:root {
+  --color1: #1F2335;
+  --color2: #24283B;
+  --color3: #C0CAF5;
+  --color4: #7ACFFF;
+  --color5: #BB9ADA;
+  --color6: #8ECE5B;
+  --color7: #F75E60;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  font-family: 'Ubuntu Mono', monospace;
+  background: var(--color2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin: 1rem;
+  color: var(--color7);
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color4);
+}
+
+.about {
+  padding: 1rem 2rem;
+}
+
+.profile-picture {
+  z-index: 1;
+  max-width: 200px;
+  /*transform: rotate(-20deg);
+  position: absolute;
+  top: 20vh;
+  right: 20vw; */
+}
+
+.presentation {
+  font-size: max(1rem, 2vw);
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+  line-height: max(2.5rem, 3vw);
+  color: var(--color4);
+  padding: 2rem;
+  width: 100%;
+  font-style: italic;
+}
+
+.highlight {
+  color: var(--color6);
+  font-size: 2.5rem;
+  line-height: max(3rem, 3vw);
+}
+
+.tab {
+  margin-left: 1rem;
+}
+
+.menu-icon {
+  z-index: 3;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 30px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-icon > div {
+  display: block;
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+  background: var(--color3);
+  transform-origin: left;
+  transition: all ease .5s;
+}
+
+.menu-click-style1 {
+  transform: rotate(45deg);
+}
+
+.menu-click-style2 {
+  opacity: 0;
+}
+
+.menu-click-style3 {
+  transform: rotate(-45deg);
+}
+
+.navbar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40vh;
+  background: var(--color1);
+  transition: margin-top ease .5s;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
+  color: var(--color7);
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar-collapse {
+  margin-top: -40vh;
+}
