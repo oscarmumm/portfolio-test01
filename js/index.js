@@ -15,6 +15,7 @@ const aboutSection = d.getElementById('about-section');
 const skillsSection = d.getElementById('skills-section');
 const projectsSection = d.getElementById('projects-section');
 const contactSection = d.getElementById('contact-section');
+const certificationSection = d.getElementById('certifications-section');
 
 const navLink = d.querySelectorAll('.nav-link');
 
@@ -104,3 +105,4 @@ observer.observe(aboutSection);
 observer.observe(skillsSection);
 observer.observe(projectsSection);
 observer.observe(contactSection);
+observer.observe(certificationSection);
