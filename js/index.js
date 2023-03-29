@@ -98,7 +98,7 @@ const loadSection = (entries, observer) => {
 const observer = new IntersectionObserver(loadSection, {
   root: null,
   rootMargin: '0px 0px 0px 0px',
-  threshold: 0.2
+  threshold: 0.5
 });
 
 observer.observe(aboutSection);
