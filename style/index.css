@@ -208,9 +208,15 @@ li {
 }
 
 /*------------------------------------- PROJECTS SECTION */
-/* .section.projects {
-  display: grid;
-} */
+
+.section.projects {
+  overflow: auto;
+}
+
+.section.projects .subtitle {
+  position: sticky;
+  left: 0;
+}
 
 .project-preview {
   border: 2px solid var(--color4);
@@ -228,6 +234,14 @@ li {
   font-size: 1.5rem;
   text-align: center;
   grid-column: 1 / 3;
+}
+
+.projects-gallery {
+  border: 2px solid var(--color6);
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: nowrap;
+  overflow: scroll;
 }
 
 .project-screenshot {
@@ -272,6 +286,17 @@ li {
 .contact-icon {
   width: 50px;
   cursor: pointer;
+}
+
+.downloadcv-btn {
+  display: block;
+  text-decoration: none;
+  background: var(--color4);
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: var(--color2);
+  margin: 1rem;
 }
 
 /*------------------------------------- FOOTER SECTION */

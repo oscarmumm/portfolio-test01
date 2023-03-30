@@ -41,16 +41,10 @@
     </nav>
 
     <section class="section start-section visible" id="start-section">
-      <div class="presentation" id="presentationPhase1">
-        <p class="highlight">{ OscarMumm :</p>
-        <p class="tab highlight">'Front-end Web </p>
-        <p class="highlight">Developer' }</p>
-      </div>
-      
-      <div class="presentation" id="presentationPhase2">
-        <p class="node1" id="node1"></p>
-        <p class="node2 tab" id="node2"></p>
-        <p class="node3" id="node3"></p>
+      <div class="presentation">
+        <p class="highlight node1" id="node1"></p>
+        <p class="highlight node2 tab" id="node2"></p>
+        <p class="highlight node3" id="node3"></p>
       </div>
     </section>
     
@@ -59,7 +53,7 @@
       <img class="profile-picture " id="profile-picture" src="./assets/img/foto-perfil-min.png" alt="foto de perfil">
       <h2 class="subtitle"> - Sobre mi - </h2>
       <p class="paragraph">
-        'Soy estudiante de Desarrollo Web Front-end. Trabajo hace 14 años en el rubro gastronómico. Deseo comenzar una carrera profesional en el sector de IT y seguir capacitándome con las tecnologías que se utilizan para el desarrollo. Mi prioridad a la hora del diseño  es crear sitios web con enfoque mobile-first y full-responsive, además de buscar la mejor performance.'
+        { Soy estudiante de Desarrollo Web Front-end. Trabajo hace 14 años en el rubro gastronómico. Deseo comenzar una carrera profesional en el sector de IT y seguir capacitándome con las tecnologías que se utilizan para el desarrollo. Mi prioridad a la hora del diseño  es crear sitios web con enfoque mobile-first y full-responsive, además de buscar la mejor performance. }
       </p>
     </section>
     
@@ -108,12 +102,12 @@
 
     <section class="section projects" id="projects-section">
       <h2 class="subtitle"> - Proyectos - </h2>
-      <ul>
+      <ul class="projects-gallery">
         <li>
           <div class="project-preview">
             <h3 class="project-title">Página del clima</h3>
             <img class="project-screenshot" src="./assets/img/screenshots/weather-page.webp" alt="">
-            <p class="project-description">Página del clima que toma los datos de la API de openweathermap creada con HTML, CSS y JavaScript</p>
+            <p class="project-description">Página del clima que toma los datos de la API de 'openweathermap' creada con HTML, CSS y JavaScript</p>
             <a href="https://oscardev-weather-page-test-01.netlify.app/" target="_blank" class="project-btn-web">Web</a>
             <a href="https://github.com/oscarmumm/weather_page" target="_blank" class="project-btn-code">Código</a>
           </div>
@@ -122,27 +116,54 @@
           <div class="project-preview">
             <h3 class="project-title">Pokedex</h3>
             <img class="project-screenshot" src="./assets/img/screenshots/pokedex.webp" alt="">
-            <p class="project-description"></p>
+            <p class="project-description">Página que simula una Pokedex, obteniendo información a traves de la API de 'pokeapi', creada con HTML, CSS y JavaSacrip</p>
             <a href="https://oscardev-pokedex-test01.netlify.app/" target="_blank" class="project-btn-web">Web</a>
             <a href="https://github.com/oscarmumm/pokedex" target="_blank" class="project-btn-code">Código</a>
           </div>
         </li>
-        <!-- <li>
+        <li>
           <div class="project-preview">
             <h3 class="project-title">App de Notas</h3>
             <img class="project-screenshot" src="./assets/img/screenshots/notes-app.webp" alt="">
-            <p class="project-description"></p>
+            <p class="project-description">Página que simula una app de notas, que permite crear notas, guardarlas y eliminarlas, hehca con HTML, CSS y JavaScript</p>
             <a href="https://mummnotesapp.netlify.app/" target="_blank" class="project-btn-web">Web</a>
             <a href="https://github.com/oscarmumm/simple-notes-app" target="_blank" class="project-btn-code">Código</a>
           </div>
-        </li> -->
+        </li>
         <li>
           <div class="project-preview">
-            <h3 class="project-title"></h3>
-            <img class="project-screenshot" src="" alt="">
-            <p class="project-description"></p>
-            <a href="" target="_blank" class="project-btn-web">Web</a>
-            <a href="" target="_blank" class="project-btn-code">Código</a>
+            <h3 class="project-title">Landing Page</h3>
+            <img class="project-screenshot" src="./assets/img/screenshots/landing-page.webp" alt="">
+            <p class="project-description">Landing page, ejemplo de publicidad con un call to action, hecha con HTML, CSS y JavaScript</p>
+            <a href="https://oscardev-landingpage-test01.netlify.app/" target="_blank" class="project-btn-web">Web</a>
+            <a href="https://github.com/oscarmumm/landing-page-turismoaventura" target="_blank" class="project-btn-code">Código</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-preview">
+            <h3 class="project-title">Calculadora básica</h3>
+            <img class="project-screenshot" src="./assets/img/screenshots/calculator.webp" alt="">
+            <p class="project-description">Una calculadora sencilla hecha con HTML, CSS y JavaScript</p>
+            <a href="https://oscardev-calculator-test01.netlify.app/" target="_blank" class="project-btn-web">Web</a>
+            <a href="https://github.com/oscarmumm/calculadora-basica" target="_blank" class="project-btn-code">Código</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-preview">
+            <h3 class="project-title">DevChallenge 01</h3>
+            <img class="project-screenshot" src="./assets/img/screenshots/devchallenges01.webp" alt="">
+            <p class="project-description">Uno de los desafíos de diseño de la web 'devchallenges', hecho con HTML, CSS y JavaScript</p>
+            <a href="https://oscardev-devchallenges01.netlify.app/" target="_blank" class="project-btn-web">Web</a>
+            <a href="https://github.com/oscarmumm/devChallenges-404-not-found" target="_blank" class="project-btn-code">Código</a>
+          </div>
+        </li>
+        <li>
+          <div class="project-preview">
+            <h3 class="project-title">DevChallenge 02</h3>
+            <img class="project-screenshot" src="./assets/img/screenshots/devchallenges02.webp" alt="">
+            <p class="project-description">Otro de los desafíos de diseño de la web 'devchallenges', hecho con HTML, CSS y JavaScript</p>
+            <a href="https://oscardev-devchallenges02.netlify.app/" target="_blank" class="project-btn-web">Web</a>
+            <a href="https://github.com/oscarmumm/devChallenges-my-team-page-master" target="_blank" class="project-btn-code">Código</a>
           </div>
         </li>
       </ul>
@@ -166,6 +187,10 @@
           <a href="" target="_blank">
             <img class="contact-icon" src="./assets/icons/github-142-svgrepo-com.svg" alt="">
           </a>
+        </li>
+        <li>
+          <a class="downloadcv-btn" href="./files/CV Light Theme.pdf" download="">Descargar CV (Tema claro)</a>
+          <a class="downloadcv-btn" href="./files/CV Dark Theme.pdf" download="">Descargar CV (Tema oscuro)</a>
         </li>
       </ul>
       
