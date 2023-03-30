@@ -73,11 +73,8 @@ window.addEventListener('load', () => {
 
 //---------------------- OBSERVER ----------------------
 const loadSection = (entries, observer) => {
-  // console.log(entries);
-  // console.log(observer);
   entries.forEach((entry) => {
     if(entry.isIntersecting){
-      console.log('La seccion está en el viewport');
       entry.target.classList.add('visible');
     } else {
       entry.target.classList.remove('visible');
