@@ -324,6 +324,10 @@ li {
   color: var(--color7);
 }
 
+.navbar a:hover {
+  color: var(--color5);
+}
+
 .navbar-collapse {
   margin-top: -60vh;
 }
