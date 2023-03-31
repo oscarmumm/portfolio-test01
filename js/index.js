@@ -40,20 +40,20 @@ navLink.forEach((element) => {
 
 
 //------------------------------------------ TYPING ANIMATION
-const node1 = d.getElementById('node1');
-const text1 = `{ OscarMumm : 'Front-end Web Developer' };`;
-let typingIndex = 0;
-function typing() {
-  if (typingIndex < text1.length) {
-    node1.innerHTML += `${text1.charAt(typingIndex)}`;
-    typingIndex++;
-    setTimeout(typing, 75);
-  }
-}
+// const node1 = d.getElementById('node1');
+// const text1 = `{ OscarMumm : 'Front-end Web Developer' };`;
+// let typingIndex = 0;
+// function typing() {
+//   if (typingIndex < text1.length) {
+//     node1.innerHTML += `${text1.charAt(typingIndex)}`;
+//     typingIndex++;
+//     setTimeout(typing, 75);
+//   }
+// }
 
-window.addEventListener('load', () => {
-  typing();
-});
+// window.addEventListener('load', () => {
+//   typing();
+// });
 
 
 //-------------------------------------------- OBSERVER 
