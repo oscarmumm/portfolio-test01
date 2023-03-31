@@ -240,11 +240,13 @@ li {
 .certification-img {
   max-width: 250px;
   margin: 1rem;
+  box-shadow: 0 0 5px var(--color4);
+
 }
 
 .section.certifications .subtitle {
   position: sticky;
-  left: 0;
+  left: 20%;
 }
 
 /*------------------------------------- PROJECTS SECTION */
@@ -264,11 +266,12 @@ li {
 
 .section.projects .subtitle {
   position: sticky;
-  left: 0;
+  left: 20%;
 }
 
 .project-preview {
-  border: 2px solid var(--color4);
+  /* border: 2px solid var(--color4); */
+  box-shadow: 0 0 10px var(--color4);
   border-radius: 20px;
   padding: 1rem;
   min-width: 270px;

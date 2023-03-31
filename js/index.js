@@ -41,7 +41,7 @@ navLink.forEach((element) => {
 
 //------------------------------------------ TYPING ANIMATION
 const node1 = d.getElementById('node1');
-const text1 = `const OscarMumm = { 'Front-end Web Developer' };`;
+const text1 = `{ OscarMumm : 'Front-end Web Developer' };`;
 let typingIndex = 0;
 function typing() {
   if (typingIndex < text1.length) {
